@@ -1,0 +1,174 @@
+.footer{
+  height: 180px;
+  background-color: #124f0d;
+  margin-top: 55px;
+  gap: 50px;
+  display: flex;
+  justify-content: left;
+  &_container{
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20px;
+  }
+  &_left {
+    display: flex;
+    justify-content: center;
+    align-items: center; // optional, if you also want vertical centering
+  
+    img {
+      width: 110px;
+      height: 110px;
+      margin-top: 35px;
+      margin-left: 70px;
+      // margin-left: 0; // Remove this if you want it truly centered
+    }
+  }
+  &_right {
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+    align-items: center;
+    margin-top: 20px; 
+   
+    &--title {
+      font-family: "Roboto", sans-serif;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 34px;
+      letter-spacing: -0.03em;
+      text-align: center;
+      text-transform: uppercase;
+      padding-top: 35px;
+      color: white;
+    }
+  
+    &--link{
+      font-family: "Roboto", sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: -3%;
+      text-align: center;
+      color: lightgrey;
+      margin-top: 10px;
+      text-decoration: underline;
+      transition-duration: 1s;
+      &:hover{
+        font-size: 15px;
+        color: white;
+        transition-duration: 1s;
+      }
+      &--last{
+        font-family: "Roboto", sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: -3%;
+        text-align: center;
+        color: lightgrey;
+        margin-top: 1px;
+        text-decoration: underline;
+        transition-duration: 1s;
+        &:hover{
+          font-size: 15px;
+          color: white;
+          transition-duration: 1s;
+        }
+        
+      }
+      &-lst{
+        
+        margin-top: 35px;
+        width: 150px;
+          height: 50px;
+          background-color: rgb(231, 230, 230);
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition-duration: 0.8s;
+          color: #124f0d;
+          font-family: "Roboto", sans-serif;
+          font-weight: 600;
+          font-size: 17px;
+          line-height: 21px;
+          letter-spacing: -3%;
+
+          &:hover {
+            color: rgb(231, 230, 230);
+            background-color: #124f0d;
+            cursor: pointer;
+            transform: scale(1.07);
+            transition-duration: 1s;
+          }
+      }
+    }
+    &--text{
+      font-family: "Roboto", sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: -3%;
+     justify-content: left;
+      color: lightgrey;
+      margin-top: 5px;
+    }
+  }
+    &--link{
+      font-family: "Roboto", sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: -3%;
+      text-align: center;
+      color: lightgrey;
+      margin-top: 20px;
+      text-decoration: underline;
+      transition-duration: 1s;
+      &:hover{
+        font-size: 15px;
+        color: white;
+        transition-duration: 1s;
+      }
+      &--last{
+        font-family: "Roboto", sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: -3%;
+        text-align: center;
+        color: lightgrey;
+        margin-top: 15px;
+        text-decoration: underline;
+        transition-duration: 1s;
+        &:hover{
+          font-size: 15px;
+          color: white;
+          transition-duration: 1s;
+        }
+      }
+    }
+    &--text{
+      font-family: "Roboto", sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: -3%;
+     justify-content: left;
+      color: lightgrey;
+      margin-top: 10px;
+    }
+
+    &_side--flex{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      gap: 20px;
+    }
+  }
+
+@import "../adaptive/_footer_adaptive.scss";

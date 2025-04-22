@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import "./scss/components/reset";
+@import "./scss/components/keyfrmes";
+@import "./scss/components/header";
+@import "./scss/components/main";
+@import "./scss/components/footer";
+
+
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 27px;
+}

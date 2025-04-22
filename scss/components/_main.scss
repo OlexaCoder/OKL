@@ -1,0 +1,114 @@
+.main {
+  &_container {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  &_first--section {
+    background-image: url(../images/header_deck-image.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+  }
+  &_second--section {
+    margin-top: 80px;
+    &--bottom {
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    &--title {
+      display: flex;
+      justify-content: center;
+      font-size: 34px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 600;
+      line-height: 38px;
+      color: #124f0d;
+    }
+    &--text {
+      display: flex;
+      justify-content: center;
+      width: 400px;
+      font-size: 14px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 600;
+      line-height: 18px;
+      color: #124f0d;
+    }
+    img {
+      border-radius: 15px;
+    }
+  }
+  // img {
+  //   // padding-top: 25px;
+  //   margin-top: 65px;
+  //   transition-duration: 0.8s;
+  //   border-radius: 15px;
+  //   display: block;
+
+  //   &:hover{
+  //     transition-duration: 1s;
+  //     transform: scale(1.1);
+  //   }
+  // }
+
+  &_third--section {
+    &--title {
+      font-family: "Roboto", sans-serif;
+      font-weight: 600;
+      font-size: 34px;
+      line-height: 38px;
+      letter-spacing: -3%;
+      text-align: center;
+      text-transform: uppercase;
+      padding-top: 80px;
+      color: #124f0d;
+    }
+    &--cards {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 55px;
+      &--adapted {
+        display: none;
+      }
+      &--el {
+        &--image {
+          width: 345px;
+          border-radius: 15px;
+
+          transition-duration: 0.8s;
+          &:hover {
+            transition-duration: 0.8s;
+            transition-timing-function: ease-in-out;
+            transform: scale(1.05);
+          }
+        }
+      }
+
+      h3 {
+        font-size: 24px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 600;
+        line-height: 28px;
+        color: #124f0d;
+        margin-top: 10px;
+      }
+      p {
+        width: 340px;
+        font-size: 14px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 600;
+        line-height: 18px;
+        color: #124f0d;
+        margin-top: 10px;
+      }
+    }
+
+  
+  }
+}
+@import "../adaptive/main_adaptive";
